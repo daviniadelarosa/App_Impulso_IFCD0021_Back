@@ -40,7 +40,7 @@ public class UserController {
 
     @PatchMapping("/{id}")
     public User update(@PathVariable int id, @RequestBody User user) {
-        //user.setId(id);
+        user.setId(id);
         return service.save(user);
     }
 
